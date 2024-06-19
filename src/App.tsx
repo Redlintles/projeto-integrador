@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Rodizio from './pages/Rodizio';
 
-
 function App() {
 
 
