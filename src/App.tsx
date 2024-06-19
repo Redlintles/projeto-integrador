@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -28,6 +29,29 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+=======
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import './App.css'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Rodizio from './pages/Rodizio';
+
+
+function App() {
+
+
+  return (
+    <>
+     <BrowserRouter>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Rodizio/>} />
+        </Routes>
+      </main>
+        <Footer />
+     </BrowserRouter>
+>>>>>>> Stashed changes
     </>
   )
 }
