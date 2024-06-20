@@ -19,6 +19,10 @@ interface RodizioMainProps {
   rodizio: rodizioObj;
 }
 
+interface RodizioModalProps {
+  rodizio: rodizioObj;
+}
+
 type modalType = "" | "add" | "edit";
 interface modalContext {
   modal: modalType;
