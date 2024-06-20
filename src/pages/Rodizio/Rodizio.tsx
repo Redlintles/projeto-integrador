@@ -88,7 +88,7 @@ export default function Rodizio() {
           <RodizioMain rodizio={rodizios[activeIndex]} />
         </section>
       </section>
-      <RodizioModal />
+      <RodizioModal rodizio={rodizios[activeIndex]} />
     </>
   );
 }

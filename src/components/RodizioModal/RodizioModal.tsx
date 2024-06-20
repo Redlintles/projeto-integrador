@@ -4,7 +4,7 @@ import RodizioModalEdit from "./RodizioModalEdit";
 import { modalContext } from "../../context/RodizioContext";
 import { useContext } from "react";
 
-export default function RodizioModal() {
+export default function RodizioModal({ rodizio }: RodizioModalProps) {
   const { modal, setModal } = useContext(modalContext);
   return (
     <>
@@ -17,7 +17,11 @@ export default function RodizioModal() {
               </button>
             </div>
             <div className="modal__body">
-              {modal === "add" ? <RodizioModalAdd /> : <RodizioModalEdit />}
+              {modal === "add" ? (
+                <RodizioModalAdd />
+              ) : (
+                <RodizioModalEdit rodizio={rodizio} />
+              )}
             </div>
 
             <div className="modal__footer">
