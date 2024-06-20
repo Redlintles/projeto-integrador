@@ -20,9 +20,9 @@ export default function RodizioModalAdd() {
         <label>
           <span>Tipo de Ciclo</span>
           <select name="cycle">
-            <option value="monthly">Mensal</option>
-            <option value="weekly">Semanal</option>
-            <option value="yearly">Anual</option>
+            <option value="monthly">Mensal(atualização a cada 30 dias)</option>
+            <option value="weekly">Semanal(atualização a cada 7 dias)</option>
+            <option value="yearly">Anual(atualização a cada 365 dias)</option>
           </select>
         </label>
         <label>
