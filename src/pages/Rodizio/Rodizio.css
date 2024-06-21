@@ -1,0 +1,112 @@
+.rodizio {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  min-height: 100vh;
+}
+
+
+/* Aside */
+
+.rodizio__sidebar {
+  color: white;
+}
+
+.rodizio__sidebar * {
+  color: inherit;
+}
+
+.sidebar__team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.team-info__photo {
+  background-color: #ccc;
+  border-radius: 50%;
+  width: 7rem;
+  aspect-ratio: 1;
+}
+
+.team-info__name {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.rodizio__sidebar {
+  background-color: var(--aside-bg);
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.rodizio__main {
+  grid-column: span 4;
+  flex-direction: column;
+  display: flex;
+}
+
+.list-header__add {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sidebar__list-body {
+  margin-left: 2rem;
+}
+
+.list-header {
+  margin: 5rem 0 .5rem ;
+}
+.list-header,.list-header__add {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.list-header__title {
+  display: flex;
+  align-items: center;
+}
+
+.list-header__title > span {
+  margin-left: .5rem;
+}
+
+.sidebar__footer {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding:  0 .5rem;
+}
+
+.sidebar-footer__btn{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9rem;
+}
+.sidebar-footer__btn > span {
+  margin-left: .5rem;
+}
+.list-header {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+/* Main */
+

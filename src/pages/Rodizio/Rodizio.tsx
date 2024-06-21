@@ -25,6 +25,48 @@ export default function Rodizio() {
         },
       ],
     },
+    {
+      title: "Banana",
+      cycle: "Weekly",
+      desc: "Banana Dois",
+      sectors: [
+        {
+          sectorManager: {
+            name: "Jota",
+            color: "#ff0000",
+          },
+          sectorTitle: "Logística",
+        },
+      ],
+    },
+    {
+      title: "Banana",
+      cycle: "Weekly",
+      desc: "Banana Dois",
+      sectors: [
+        {
+          sectorManager: {
+            name: "Jota",
+            color: "#ff0000",
+          },
+          sectorTitle: "Logística",
+        },
+      ],
+    },
+    {
+      title: "Banana",
+      cycle: "Weekly",
+      desc: "Banana Dois",
+      sectors: [
+        {
+          sectorManager: {
+            name: "Jota",
+            color: "#ff0000",
+          },
+          sectorTitle: "Logística",
+        },
+      ],
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -36,11 +78,11 @@ export default function Rodizio() {
             <div className="team-info__photo"></div>
             <h5 className="team-info__name">Banana</h5>
           </article>
-          <div className="sidebar__rodizio-list">
-            <div className="rodizio__list-header">
+          <div className="sidebar__list">
+            <div className="list-header">
               <h5 className="list-header__title">
                 <GrPowerCycle />
-                Rodízios
+                <span>Rodízios</span>
               </h5>
               <button
                 className="list-header__add"
@@ -49,7 +91,7 @@ export default function Rodizio() {
                 <FaPlus />
               </button>
             </div>
-            <div className="rodizio__list-body">
+            <div className="sidebar__list-body">
               <ul>
                 {rodizios &&
                   rodizios.map((rodizio: rodizioObj, index: number) => (
@@ -68,16 +110,16 @@ export default function Rodizio() {
               </ul>
             </div>
           </div>
-          <div className="sidebar__rodizio-footer">
-            <button className="rodizio-footer__btn">
+          <div className="sidebar__footer">
+            <button className="sidebar-footer__btn">
               <IoLogOutOutline />
               <span>Sair Da Equipe</span>
             </button>
-            <button className="rodizio-footer__btn">
+            <button className="sidebar-footer__btn">
               <FaTrash />
               <span>Excluir Equipe</span>
             </button>
-            <button className="rodizio-footer__btn bold">
+            <button className="sidebar-footer__btn bold">
               <FaArrowLeft />
               <span>Voltar</span>
             </button>
