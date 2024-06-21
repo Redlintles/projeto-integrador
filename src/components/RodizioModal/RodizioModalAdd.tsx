@@ -2,7 +2,7 @@ export default function RodizioModalAdd() {
   return (
     <form>
       <form className="modal__form">
-        <label>
+        <label className="modal__label">
           <span>Nome Do Rodízio</span>
           <input
             type="text"
@@ -10,14 +10,14 @@ export default function RodizioModalAdd() {
             name="name"
           />
         </label>
-        <label>
+        <label className="modal__label">
           <span>Descrição</span>
           <textarea
             name="desc"
             placeholder="Digite as informações deste rodízio"
           ></textarea>
         </label>
-        <label>
+        <label className="modal__label">
           <span>Tipo de Ciclo</span>
           <select name="cycle">
             <option value="monthly">Mensal(atualização a cada 30 dias)</option>
@@ -25,7 +25,7 @@ export default function RodizioModalAdd() {
             <option value="yearly">Anual(atualização a cada 365 dias)</option>
           </select>
         </label>
-        <label>
+        <label className="modal__label">
           <span>Data De Início</span>
           <input type="date" />
         </label>

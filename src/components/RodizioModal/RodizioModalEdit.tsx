@@ -7,8 +7,26 @@ export default function RodizioModalEdit({ rodizio }: RodizioModalProps) {
   return (
     <form>
       <form className="modal__form">
-        <div>
-          <h2>{rodizio.title}</h2>
+        <div
+          className={
+            editTitle
+              ? "modal__edit-title"
+              : "modal__edit-title modal__btn--ag-bottom"
+          }
+        >
+          {editTitle && (
+            <label className="modal__label">
+              <span>Nome Do Rodízio</span>
+              <input
+                type="text"
+                placeholder="Digite o nome do rodízio"
+                name="name"
+                value={rodizio.title}
+              />
+            </label>
+          )}
+
+          {!editTitle && <h2>{rodizio.title}</h2>}
           <button
             type="button"
             onClick={() =>
@@ -21,24 +39,14 @@ export default function RodizioModalEdit({ rodizio }: RodizioModalProps) {
           </button>
         </div>
 
-        {editTitle && (
-          <label>
-            <span>Nome Do Rodízio</span>
-            <input
-              type="text"
-              placeholder="Digite o nome do rodízio"
-              name="name"
-            />
-          </label>
-        )}
-        <label>
+        <label className="modal__label">
           <span>Descrição</span>
           <textarea
             name="desc"
             placeholder="Digite as informações deste rodízio"
           ></textarea>
         </label>
-        <label>
+        <label className="modal__label">
           <span>Tipo de Ciclo</span>
           <select name="cycle">
             <option value="monthly">Mensal(atualização a cada 30 dias)</option>
@@ -46,7 +54,7 @@ export default function RodizioModalEdit({ rodizio }: RodizioModalProps) {
             <option value="yearly">Anual(atualização a cada 365 dias)</option>
           </select>
         </label>
-        <label>
+        <label className="modal__label">
           <span>Data De Início</span>
           <input type="date" />
         </label>

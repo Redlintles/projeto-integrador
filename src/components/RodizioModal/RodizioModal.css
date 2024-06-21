@@ -1,0 +1,88 @@
+.modal {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal__content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,textarea,select {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  padding: .5rem;
+  color: black;
+  border-radius: 5px;
+  margin: .5rem 0;
+  width: 25rem;
+}
+
+:is(input,textarea,select)::placeholder,select {
+  color: #777;
+}
+
+option {
+  color: black;
+}
+
+.modal__header, .modal__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__form,.modal__label{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label > span {
+  font-weight: bold;
+  color: black;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.modal__label > textarea {
+  height: 5rem;
+}
+
+.modal__close-btn {
+  color: #777;
+}
+
+.modal__btn {
+  background-color: black;
+  color: white;
+  padding: .25rem .5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.1rem
+}
+
+.modal__edit-title {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: last baseline;
+}
+
+.modal__edit-title > button {
+  margin-left: .5rem;
+  font-size: 1rem;
+  color: #777;
+  height: min-content;
+  padding: 0;
+}
+
+
