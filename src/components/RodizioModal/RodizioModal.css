@@ -65,10 +65,10 @@ option {
 .modal__btn {
   background-color: black;
   color: white;
-  padding: .25rem .5rem;
+  padding: .5rem 1rem;
   font-weight: bold;
   border-radius: 10px;
-  font-size: 1.1rem
+  font-size: 1rem
 }
 
 .modal__edit-title {
