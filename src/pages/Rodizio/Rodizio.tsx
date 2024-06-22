@@ -2,7 +2,7 @@ import { FaPlus, FaTrash, FaArrowLeft } from "react-icons/fa";
 import "./Rodizio.css";
 import { GrPowerCycle } from "react-icons/gr";
 import { IoLogOutOutline } from "react-icons/io5";
-import { useContext, useState } from "react";
+import { MouseEvent, TouchEvent, useContext, useState } from "react";
 import RodizioModal from "../../components/RodizioModal/RodizioModal";
 import { modalContext } from "../../context/RodizioContext";
 import RodizioMain from "../../components/RodizioMain/RodizioMain";
@@ -14,7 +14,7 @@ export default function Rodizio() {
     {
       title: "Banana",
       cycle: "Weekly",
-      desc: "Banana Dois",
+      desc: "Lorem Ipsum dolor pit sit amet doi codi kjshflkjfhg adkhljslkjfh lkshfkjdgfh aLKSHHJ",
       sectors: [
         {
           sectorManager: {
@@ -95,17 +95,19 @@ export default function Rodizio() {
               <ul>
                 {rodizios &&
                   rodizios.map((rodizio: rodizioObj, index: number) => (
-                    <p
-                      key={index}
-                      onClick={() => setActiveIndex(index)}
-                      className={
-                        activeIndex === index
-                          ? "rodizio__name rodizio__name--active"
-                          : "rodizio__name"
-                      }
-                    >
-                      {rodizio.title}
-                    </p>
+                    <li>
+                      <button
+                        key={index}
+                        onClick={() => setActiveIndex(index)}
+                        className={
+                          activeIndex === index
+                            ? "rodizio__name active"
+                            : "rodizio__name"
+                        }
+                      >
+                        {rodizio.title}
+                      </button>
+                    </li>
                   ))}
               </ul>
             </div>
@@ -119,7 +121,7 @@ export default function Rodizio() {
               <FaTrash />
               <span>Excluir Equipe</span>
             </button>
-            <button className="sidebar-footer__btn bold">
+            <button className="sidebar-footer__btn active">
               <FaArrowLeft />
               <span>Voltar</span>
             </button>
