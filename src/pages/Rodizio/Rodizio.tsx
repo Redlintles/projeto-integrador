@@ -2,7 +2,7 @@ import { FaPlus, FaTrash, FaArrowLeft } from "react-icons/fa";
 import "./Rodizio.css";
 import { GrPowerCycle } from "react-icons/gr";
 import { IoLogOutOutline } from "react-icons/io5";
-import { MouseEvent, TouchEvent, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import RodizioModal from "../../components/RodizioModal/RodizioModal";
 import { modalContext } from "../../context/RodizioContext";
 import RodizioMain from "../../components/RodizioMain/RodizioMain";
