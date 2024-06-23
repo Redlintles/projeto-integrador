@@ -30,7 +30,7 @@
   background-image: linear-gradient(to bottom, var(--color-2) 0% ,var(--aside-bg) 38%, var(--sec-color) 85%, var(--color-3) 100%);
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 50px;
   color: white;
   display: flex;
   flex-direction: column;
