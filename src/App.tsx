@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Rodizio from "./pages/Rodizio/Rodizio";
 import { ModalContextProvider } from "./context/RodizioContext";
 import Menu from "./pages/Menu/Menu";
+import Login from "./pages/Login/Login";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route path="/rodizio" element={<Rodizio />} />
               <Route path="/menu" element={<Menu />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </ModalContextProvider>
         </main>
