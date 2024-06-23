@@ -1,8 +1,14 @@
 :root {
+  --bg-color: #153239;
   --aside-bg: #132E35;
   --aside-color-normal: rgba(255,255,255,0.7);
   --aside-color-active: rgba(255,255,255,1);
   --sec-color: #69818D;
+  --color-2:   #0D1F23;
+  --color-3: #2D4A53;
+  --color-4: #69818D;
+  --color-5: #AFB3B7;
+  --color-6: #5A636A;
 }
 
 
@@ -21,9 +27,14 @@ a {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer
 }
 
 
 textarea {
   resize:none
+}
+
+ul {
+  list-style: none;
 }
